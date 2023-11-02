@@ -1,0 +1,41 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.pricing-table
+{
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+}
+.plan
+{
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    transition: transform 0.3s;
+}
+.plan:hover
+{
+    transform: scale(1.05);
+}
+.plan .price
+{
+font-size: 24px;
+margin: 10px 0;
+color: #ff6f61;
+}
+.plan ul
+{
+list-style: none;
+padding: 0;
+}

@@ -8,11 +8,29 @@ body
     min-height: 100vh;
     margin: 0;
 }
+h2
+{
+    font-size: larger;
+}
 .pricing-table
 {
     display: flex;
     justify-content: space-around;
     max-width: 900px;
+}
+.plan0
+{
+    background-color:gold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    transition: transform 0.3s;
+}
+.plan0:hover
+{
+    transform: scale(1.05);
 }
 .plan1
 {
@@ -29,7 +47,7 @@ body
     transform: scale(1.05);
 }
 
-.plan3
+.plan2
 {
     background-color:gold;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -40,20 +58,18 @@ body
     transition: transform 0.3s;
 }
 
-.plan3:hover
+.plan2:hover
 {
     transform: scale(1.05);
 }
-.plan1:hover
+.plan, .plan1, .plan3 .price
 {
-    transform: scale(1.05);
-}
-.plan .price
-{
-font-size: 24px;
+font-size: 21px;
+font-weight: 100;
 margin: 10px 0;
-color: #ff6f61;
+color:black;
 }
+
 .plan ul
 {
 list-style: none;

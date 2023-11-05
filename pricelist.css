@@ -14,9 +14,9 @@ body
     justify-content: space-around;
     max-width: 900px;
 }
-.plan
+.plan1
 {
-    background-color: #fff;
+    background-color: palegoldenrod;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
@@ -24,7 +24,27 @@ body
     width: 30%;
     transition: transform 0.3s;
 }
-.plan:hover
+.plan1:hover
+{
+    transform: scale(1.05);
+}
+
+.plan3
+{
+    background-color:gold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.plan3:hover
+{
+    transform: scale(1.05);
+}
+.plan1:hover
 {
     transform: scale(1.05);
 }
@@ -38,4 +58,26 @@ color: #ff6f61;
 {
 list-style: none;
 padding: 0;
+}
+.plan ul li
+{
+    margin: 10px 0;
+}
+.plan .btn
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+.plan ,btn:hover
+{
+    background-color: #d44036;
+}
+.plan .popular
+{
+    border: 2px solid #ff6f61;
 }

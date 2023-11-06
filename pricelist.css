@@ -79,7 +79,7 @@ padding: 0;
 {
     margin: 10px 0;
 }
-.plan .btn
+#btn
 {
     display: inline-block;
     padding: 10px 20px;
@@ -92,8 +92,4 @@ padding: 0;
 .plan ,btn:hover
 {
     background-color: #d44036;
-}
-.plan .popular
-{
-    border: 2px solid #ff6f61;
 }

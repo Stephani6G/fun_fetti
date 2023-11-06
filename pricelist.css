@@ -1,0 +1,95 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+h2
+{
+    font-size: larger;
+}
+.pricing-table
+{
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+}
+.plan0
+{
+    background-color:gold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    transition: transform 0.3s;
+}
+.plan0:hover
+{
+    transform: scale(1.05);
+}
+.plan1
+{
+    background-color: palegoldenrod;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    transition: transform 0.3s;
+}
+.plan1:hover
+{
+    transform: scale(1.05);
+}
+
+.plan2
+{
+    background-color:gold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.plan2:hover
+{
+    transform: scale(1.05);
+}
+.plan, .plan1, .plan3 .price
+{
+font-size: 21px;
+font-weight: 100;
+margin: 10px 0;
+color:black;
+}
+
+.plan ul
+{
+list-style: none;
+padding: 0;
+}
+.plan ul li
+{
+    margin: 10px 0;
+}
+#btn
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+.plan ,btn:hover
+{
+    background-color: #d44036;
+}

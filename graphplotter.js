@@ -1,4 +1,6 @@
 // graphplotter.js
+console.log(math);
+
 
 function plotGraph() {
     // Get the input mathematical function

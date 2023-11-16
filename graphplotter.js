@@ -1,11 +1,10 @@
-// graphplotter.js
-
+// Function to plot the graph
 function plotGraph() {
-    // Get the input mathematical function
-    const inputFunction = document.getElementById('mathFunction').value;
-
     try {
-        // Parse the mathematical function using a library like math.js
+        // Get the input mathematical function
+        const inputFunction = document.getElementById('mathFunction').value;
+
+        // Parse the mathematical function using math.js
         const parsedFunction = math.parse(inputFunction);
 
         // Compile the function
@@ -25,7 +24,7 @@ function plotGraph() {
         const xValues = Array.from({ length: 100 }, (_, i) => i / 10 - 5);
 
         // Evaluate the function for each x value
-        const yValues = xValues.map(x => compiledFunction.eval({ x }));
+        const yValues = xValues.map(x => compiledFunction.evaluate({ x: x }));
 
         // Plot the function
         ctx.beginPath();
@@ -44,7 +43,7 @@ function plotGraph() {
     }
 }
 
-// Declare drawGrid function before it's used
+// Function to draw the grid
 function drawGrid(ctx, width, height) {
     const gridSize = 20;
 
@@ -65,10 +64,12 @@ function drawGrid(ctx, width, height) {
     }
 }
 
+// Helper function to get x-coordinate in pixels
 function getPixelX(canvasWidth, xValue) {
     return canvasWidth * ((xValue + 5) / 10);
 }
 
+// Helper function to get y-coordinate in pixels
 function getPixelY(canvasHeight, yValue) {
     return canvasHeight - canvasHeight * ((yValue + 5) / 10);
 }

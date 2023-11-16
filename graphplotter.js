@@ -17,7 +17,7 @@ function plotGraph() {
         // Clear the canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        // Draw the grid
+        // Draw the grid with axes
         drawGrid(ctx, canvas.width, canvas.height);
 
         // Generate x values
@@ -43,25 +43,49 @@ function plotGraph() {
     }
 }
 
-// Function to draw the grid
+// Function to draw the grid with axes and labels
 function drawGrid(ctx, width, height) {
     const gridSize = 20;
 
-    // Draw vertical grid lines
-    for (let x = 0; x <= width; x += gridSize) {
-        ctx.beginPath();
-        ctx.moveTo(x, 0);
-        ctx.lineTo(x, height);
-        ctx.stroke();
-    }
+    // Set the color and line width for the grid and axes
+    ctx.strokeStyle = 'lightgray';
+    ctx.lineWidth = 1;
+    ctx.font = '10px Arial';
+    ctx.fillStyle = 'black';
 
-    // Draw horizontal grid lines
+    // Draw horizontal grid lines and the x-axis
     for (let y = 0; y <= height; y += gridSize) {
         ctx.beginPath();
         ctx.moveTo(0, y);
         ctx.lineTo(width, y);
         ctx.stroke();
+        // Add y-axis labels
+        if (y !== height / 2) {
+            ctx.fillText(((height / 2 - y) / (height / 2) * 5).toFixed(1), width / 2 + 5, y + 10);
+        }
     }
+    ctx.beginPath();
+    ctx.moveTo(0, height / 2);
+    ctx.lineTo(width, height / 2);
+    ctx.stroke();
+    ctx.fillText('0', width / 2 + 5, height / 2 - 5);
+
+    // Draw vertical grid lines and the y-axis
+    for (let x = 0; x <= width; x += gridSize) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+        ctx.stroke();
+        // Add x-axis labels
+        if (x !== width / 2) {
+            ctx.fillText(((x - width / 2) / (width / 2) * 5).toFixed(1), x + 2, height / 2 + 15);
+        }
+    }
+    ctx.beginPath();
+    ctx.moveTo(width / 2, 0);
+    ctx.lineTo(width / 2, height);
+    ctx.stroke();
+    ctx.fillText('0', width / 2 + 5, height / 2 + 15);
 }
 
 // Helper function to get x-coordinate in pixels

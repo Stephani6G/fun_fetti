@@ -43,3 +43,32 @@ function plotGraph() {
         console.error('Error compiling or evaluating the function:', error.message);
     }
 }
+
+// Declare drawGrid function before it's used
+function drawGrid(ctx, width, height) {
+    const gridSize = 20;
+
+    // Draw vertical grid lines
+    for (let x = 0; x <= width; x += gridSize) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+        ctx.stroke();
+    }
+
+    // Draw horizontal grid lines
+    for (let y = 0; y <= height; y += gridSize) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(width, y);
+        ctx.stroke();
+    }
+}
+
+function getPixelX(canvasWidth, xValue) {
+    return canvasWidth * ((xValue + 5) / 10);
+}
+
+function getPixelY(canvasHeight, yValue) {
+    return canvasHeight - canvasHeight * ((yValue + 5) / 10);
+}

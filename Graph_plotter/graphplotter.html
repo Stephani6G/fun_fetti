@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Plotter</title>
+    <link rel="stylesheet" href="graphplotter.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.0/math.js" defer></script>
 
+</head>
+<body>
+    <h1>GRAPH PLOTTER</h1>
+    <label for="mathFunction">Enter a Mathematical function</label>
+    <input type="text" id="mathFunction" placeholder="e.g., x^2, sin(x), etc.">
+    <button onclick="plotGraph()">Plot Graph</button>
+    
+    <div style="width:80%; margin: auto;">
+    <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+
+    <script src="graphplotter.js"  defer></script>
+
+</body>
+</html>

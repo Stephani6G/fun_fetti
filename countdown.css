@@ -23,16 +23,15 @@ label
   /* Flexbox layout for input fields */
 .input-container
 {
-    display: grid;
-    align-items: center;
+    display: -ms-inline-grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
     justify-content: space-evenly;
     margin-bottom: 10px;
 }
   
 .input-container input[type="number"] 
 {
-    flex: 1;
-    size: 20px;
     padding: 5px;
     margin-right: 5px;
 }

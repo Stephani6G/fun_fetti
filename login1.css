@@ -70,3 +70,18 @@ button:hover
 {
     background-color: #27ae60;
 }
+.signup-link
+{
+        margin-top: 20px;
+        color: #333;
+        font-size: 14px;
+}
+.signup-link a
+{
+color: #3498db;
+text-decoration: none;
+}
+.signup-link a:hover
+{
+    text-decoration: underline;
+}

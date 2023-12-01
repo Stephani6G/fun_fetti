@@ -5,14 +5,13 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0;
+    
 }
 
 body
 {
     font-family: 'Fredoka One', sans-serif;
-    background-color: #f5f5f5;
     margin: 0;
-    background-image: url('pencils-452238_1920.jpg');
     background-size: stretch;
     background-repeat: no-repeat;
 }
@@ -24,9 +23,17 @@ header
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
+#favorite-list
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
 h1
 {
     margin-bottom: 20px;
+    text-align: center;
 }
 form
 {
@@ -87,6 +94,12 @@ blockquote
 {
     font-style: italic;
     margin-bottom: 10px;
+}
+a
+{
+    text-decoration: none;
+    margin-bottom: 20px;
+    color:navy;
 }
 p
 {

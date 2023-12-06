@@ -10,3 +10,88 @@ h1{
     font-size: 4em;
 color: darkmagenta;
 }
+
+header
+{
+    background-color: #32a88d;
+    color: whitesmoke;
+    padding: 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul
+{
+    list-style: none;
+    display:flex;
+    margin: 20px;
+}
+nav ul li
+{
+    margin-right: 20px;
+    text-decoration: none;
+}
+nav ul li a
+{
+    text-decoration: none;
+
+}
+
+main
+{
+    padding: 20px;
+
+}
+.product
+{
+    height: 450px;
+    width: 450px;
+    display: flexbox;
+    flex-direction: column;
+
+    margin-bottom: 30px;
+    border:  1px solid #333;
+    padding: 15px;
+    flex: 1;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px #333;
+}
+.product img
+{
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+h4
+{
+    color: navy;
+    font-size: 1.3em;
+}
+footer
+{
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+#about
+{
+    margin: 40px;
+    font-style: italic;
+    font-display: swap;
+
+}
+#contact
+{
+    text-decoration: underline;
+    padding: 20px;
+    margin: 20px;
+}
+#contact a{
+    text-decoration: none;
+    font-size: larger;
+}
